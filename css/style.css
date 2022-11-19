@@ -1,0 +1,167 @@
+:root { 
+--my-padding: 0.4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
+@media (max-width: 1024px) {
+    .container { 
+        color: whitesmoke;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+"header menu menu menu"
+"hero hero hero hero"
+"main main image image"
+"main main extra extra"
+"banner banner banner banner"
+    ;
+
+    height: 100vh;
+    text-align: center;
+    text-transform: uppercase;
+    }
+
+header { 
+    background-color: darkred;
+    display: grid;
+    align-items: center;
+    grid-area: header;
+    padding: var(--my-padding);
+    }
+
+.Menu { 
+    background-color: brown;
+    display: grid;
+    align-items: center;
+    grid-area: menu;
+    padding: var(--my-padding);
+}
+
+main { 
+background-color: darkgreen;
+display: grid;
+    align-items: center;
+grid-area: main;
+padding: var(--my-padding);
+}
+
+.Hero { 
+background-color: dimgray;
+display: grid;
+    align-items: center;
+grid-area: hero;
+padding: var(--my-padding);
+}
+
+.Banner { 
+    background-color: darkcyan;
+    display: grid;
+    align-items: center;
+    grid-area: banner;
+    padding: var(--my-padding);
+}
+
+.Extra { 
+    background-color: lightslategray;
+    display: grid;
+    align-items: center;
+    grid-area: extra;
+    padding: var(--my-padding);
+}
+
+image { 
+    background-color: black;
+    display: grid;
+    align-items: center;
+    grid-area: image;
+    padding: var(--my-padding);
+}
+
+}
+
+@media (max-width: 480px) {
+    .container { 
+        color: deeppink;
+gap: 0;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas:
+"header"
+"menu"
+"hero"
+"main"
+"banner"
+"extra"
+"image"
+;
+
+height: 100vh;
+text-align: center;
+text-transform: uppercase;
+    }
+    header { 
+        background-color: peachpuff;
+        grid-area: header;
+        display: grid;
+    align-items: center;
+        padding: var(--my-padding);
+        }
+    
+    .Menu { 
+        background-color: lightblue;
+        grid-area: menu;display: grid;
+        align-items: center;
+        padding: var(--my-padding);
+    }
+    
+    main { 
+    background-color: lightpink;
+    display: grid;
+    align-items: center;
+    grid-area: main;
+    padding: var(--my-padding);
+    }
+    
+    .Hero { 
+    background-color: lightyellow;
+    grid-area: hero;
+    display: grid;
+    align-items: center;
+    padding: var(--my-padding);
+    }
+    
+    .Banner { 
+        background-color: grey;
+        display: grid;
+    align-items: center;
+        grid-area: banner;
+        padding: var(--my-padding);
+    }
+    
+    .Extra { 
+        background-color: lightsteelblue;
+        display: grid;
+    align-items: center;
+        grid-area: extra;
+        padding: var(--my-padding);
+    }
+    
+    .Image { 
+        background-color: orchid;
+        grid-area: image;
+        display: grid;
+    align-items: center;
+        padding: var(--my-padding);
+    }    
+
+
+}
+
